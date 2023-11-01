@@ -12,12 +12,9 @@ function createWindow () {
     }
   })
   process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
-  //load the index.html from a url
-
-  win.loadURL('http://localhost:3000');
 
 win.loadURL(`file://${path.join(__dirname, '../build/index.html')}`);
-  // win.loadURL(`file://${path.join(__dirname, '../build/index.html')}`)
+
   // Open the DevTools.
   win.webContents.openDevTools()
 }

@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "app": "electron .  --trace-warnings"
+    "app": "npm run build && electron .  --trace-warnings"
   },
   "eslintConfig": {
     "extends": [
